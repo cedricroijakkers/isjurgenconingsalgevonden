@@ -1,48 +1,11 @@
 <html>
     <head>
         <title>Is Jürgen Conings al gevonden?</title>
-        <script language="javascript">
-            /*
-            * Basic Count Up from Date and Time
-            * Original author: @mrwigster / https://guwii.com/bytes/count-date-time-javascript/
-            */
-            window.onload = function() {
-                countUpFromTime(1621353600000, 'sinds');
-            };
-            function countUpFromTime(countFrom, id) {
-                countFrom = new Date(countFrom);
-                var now = new Date(),
-                    countFrom = new Date(countFrom),
-                    timeDifference = (now - countFrom);
-                    
-                var secondsInADay = 60 * 60 * 1000 * 24,
-                    secondsInAHour = 60 * 60 * 1000;
-                    
-                days = Math.floor(timeDifference / (secondsInADay) * 1);
-                hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
-                mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
-                secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
-
-                var idEl = document.getElementById(id);
-                idEl.innerHTML = "We zijn hem al " + days + (days == 1 ? " dag, " : " dagen, ") + hours + (hours == 1 ? " uur, " : " uren, ") + mins + (mins == 1 ? " minuut en " : " minuten en ") + secs + (secs == 1 ? " seconde kwijt" : " seconden kwijt");
-
-                clearTimeout(countUpFromTime.interval);
-                countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
-            };
-        </script>
     </head>
     <body>
         <div style="text-align: center;">
-            <h1>NEE</h1>
-            <p id="sinds"></p>
-            <p><strong>Hebben we intussen wel al gevonden:</strong><br>
-            Afscheidsbrieven<br>
-            Een auto vol wapens<br>
-            Militaire decoraties op het graf van zijn ouders<br>
-            Een visser in een camouflagepak<br>
-            "Spullen"<br>
-            Een rugzak met munitie en medicijnen<br>
-            </p>
+            <h1>JA</h1>
+            <p>Na meer dan 32 dagen is zijn levenloze lichaam gevonden.</p>
         </div>
     </body>
 </html>
